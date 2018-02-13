@@ -30,7 +30,7 @@ public class GreatestNumber {
         JOptionPane.showMessageDialog(null, "The greatest number is " + numberThree);
       }
     }//end if
-
+//Otra manera de hacerlo
     if (numberOne > numberTwo && numberOne > numberThree) {
       JOptionPane.showMessageDialog(null, "The greatest number is " + numberOne);
     }//end if
