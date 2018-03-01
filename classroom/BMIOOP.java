@@ -34,7 +34,7 @@ public class BMIOOP{
   public double getWeigth(){
     return this.weigth;
   }
-  public void setHeigth(){
+  public void setHeigth(double height){
     this.heigth = heigth;
   }
   public double getHeigth(){
@@ -43,8 +43,12 @@ public class BMIOOP{
 
 
   public double getBMI(){
-    double bmi= this.weigth*KILOGRAMS_PER_POUND/((this.heigth*METERS_PER_INCH))*(this.heigth*METERS_PER_INCH);
-    return Math.round(bmi*100) /100;
+    double weightInKilograms = weigth * KILOGRAMS_PER_POUND;
+    double heightInMeters = heigth * METERS_PER_INCH;
+    double bmi = weightInKilograms / Math.pow(heightInMeters, 2);
+
+  //  double bmi= this.weigth*KILOGRAMS_PER_POUND/((this.heigth*METERS_PER_INCH))*(this.heigth*METERS_PER_INCH);
+    return Math.round(bmi);
     }
 
 
