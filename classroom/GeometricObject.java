@@ -1,10 +1,10 @@
 /*
 * GeometricObject.java
-* Randall Marquez Cuevas
+* Yamal Marquez Cuevas
 * This is a superclass
 */
 import java.util.Date;
-public class GeometricObject{
+public abstract class GeometricObject{ //abstract define los metodos que le puede heredar a los hijos o subclses y estos pueden usar estos metodos de la manera que mas conveniente
 	private String color;
 	private boolean filled; //rellenado
 	private Date dateCreated; // Fecha de creacion
@@ -35,4 +35,8 @@ public class GeometricObject{
 	public Date getDateCreDate(){
 		return this.dateCreated;
 	}
+
+	//definir el metodo abstracto que pueden utilizar Circle2 y RectangleGO
+	public abstract double getArea();
+	public abstract double getPerimeter();
 }
