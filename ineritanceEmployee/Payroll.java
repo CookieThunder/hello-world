@@ -21,5 +21,12 @@ public class Payroll {
 
     Employee pedro = new Hourly(name, hours);
     JOptionPane.showMessageDialog(null, "Pedro´s pay:" + pedro.getPay());
+
+    //Commissioned
+    Commissioned alan = new Commissioned("Alan");
+
+    alan.addSales(550);
+    alan.addSales(1250);
+    JOptionPane.showMessageDialog(null, "Alan Sales: ----" + alan.getPay());
   }
 }
