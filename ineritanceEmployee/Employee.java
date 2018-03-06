@@ -5,16 +5,14 @@
 ***********************************************************/
 import javax.swing.*;
 
-public class Employee {
+public abstract class Employee {
   private String name;
 
   public Employee(String name) {
     this.name = name;
   }
 
-  public double getPay() {
-    return 0.0; //hard code
-  }
+  public abstract double getPay(); 
 
   public void printPay (int date) {
     JOptionPane.showMessageDialog(null, "Hardcodeo");

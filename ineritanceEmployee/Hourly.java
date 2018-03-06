@@ -5,8 +5,8 @@
 */
 public class Hourly extends Employee {
 
-  private double hourlyRate;
-  private double hours = 0.0;
+  private double hourlyRate = 150;
+  private double hours;
 
   public Hourly(String name, double hours) {
     super(name);
@@ -14,10 +14,11 @@ public class Hourly extends Employee {
     }
 
   public double getPay() {
-    return 0.0; //hard code
+    double pay = hourlyRate * hours;
+    return pay;
   }
 
   public void addHours (double hours) {
-    this.hours = hours;
+    this.hours += hours;
   }
 }

@@ -13,6 +13,6 @@ public class Salaried extends Employee{
   }
 
   public double getPay() {
-    return 0.0; //hard code 
+    return this.salary; 
   }
 }
