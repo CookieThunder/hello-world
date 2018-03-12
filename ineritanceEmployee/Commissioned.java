@@ -13,7 +13,7 @@ public class Commissioned extends Employee implements Commission{
   }
 
   public void addSales(double sales) {
-    this. sales += sales;
+    this.sales += sales;
   }
 
   public double getPay() {

@@ -6,5 +6,5 @@
 interface Commission {
   double COMMSSION_RATE = 0.10;
 
-  void addSales (double sales);
+  void addSales(double sales);
 }
