@@ -13,12 +13,19 @@ public class DialList2 {
     String phoneNum; //aqu se almacena el numero telefonico
 
     phoneNum = JOptionPane.showInputDialog("Enter a phone number \n( or press q to QUIT )");
-    while (!phoneNum.equalsIgnoreCase("q") && filledNumbers < phoneList.lenght) {
-        if (phoneNum.length() < 1 || phoneNum.length() > 10) {
+    while (!phoneNum.equalsIgnoreCase("q") && filledNumbers < phoneList.length) {
+        if (phoneNum.length() < 10) {
             JOptionPane.showMessageDialog(null, "Must enter a valid number (10 characters) ");
         } else {
-          
-        }
+          phoneList[filledNumbers] = phoneNum;
+          filledNumbers ++;
+        }//end else
+        phoneNum = JOptionPane.showInputDialog("Enter a phone number \n( or press q to QUIT )");
+    }//end while
+
+    JOptionPane.showMessageDialog(null, "Dial List");
+    for (int i = 0; i < filledNumbers ; i++ ) {
+      JOptionPane.showMessageDialog(null, (i +1) + " Phone: " + phoneList[i]);
     }
-  }
-}
+  }//end main
+}//end class DialList2
