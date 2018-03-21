@@ -67,7 +67,7 @@ public class Serie implements Entregable{
 // Sobrecarga del metodo toString
   @Override
   public String toString() {
-    return "Title: " + getTitle() + "\nNumber of seasons: " + getNumOfSeasons + "\nEntregado: " + entregado + "\nCategory: " + getCategory() + "\nCreator: " + getCreator();
+    return "Title: " + getTitle() + "\nNumber of seasons: " + getNumOfSeasons() + "\nEntregado: " + entregado + "\nCategory: " + getCategory() + "\nCreator: " + getCreator();
   }
 
 //Los metodos de implements Entregable
