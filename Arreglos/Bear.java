@@ -19,10 +19,15 @@ public class Bear{
     JOptionPane.showMessageDialog(null, MAKER + " " + TYPE);
   }
 
+  public void Menu() {
+    JOptionPane.showInputDialog("---MENU--- \n1: ADD Bear \n2: SEARCH Bear \n3: REMOVE Bear \n4: SHOW Bears \n5: EXIT");
+  }
+
   public static void main(String[] args) {
     ArrayList<Bear> teddyBearStore = new ArrayList<Bear>();
 
-    int opc=Integer.parseInt(JOPtionPane.showMessageDialog(null,"............MENU......\n 1.-Add Bear \n 2.-Search \n 3.-Remove \n 3.-Show all \n5.-Exit"));
+    int opc = Integer.parseInt(teddyBearStore.Menu());
+    //int opc = Integer.parseInt(JOPtionPane.showInputDialog(null,"............MENU......\n1- Add Bear \n2- Search \n3- Remove \n4- Show all \n5- Exit"));
     do{
       switch(opc){
         case 1:
@@ -39,5 +44,5 @@ public class Bear{
         index=Integer.parseInt(JOPtionPane.showInputDialog());
       }
   } while(opc != 5);
-}
+ }
 }
